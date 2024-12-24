@@ -1,0 +1,78 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+#dropdown-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+}
+
+#dropdown-container button {
+    border-radius: 0%;
+    background-color: white;
+    border: none;
+    z-index: 1000;
+}
+
+#dropdown-container button:hover {
+    color: rgb(87, 87, 87);
+}
+
+#dropdown-container svg {
+    height: 25px;
+    width: 25px;
+}
+
+#carousel-container {
+    position: relative;
+    width: 1000px;
+}
+
+#carousel-left, #carousel-right {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+}
+
+#carousel-right {
+    right: 0;
+}
+
+#carousel-slide-container img {
+    width: 100%;
+}
+
+button.carousel-control  {
+    background: transparent;
+    font-size: 100px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
+
+#slide-navigation button {
+    border: none;
+    background: transparent;
+    font-size: 100px;
+    color: white;
+    font-weight: bolder;
+}
+
+#slide-navigation button:focus {
+    color: blue;
+}
+
+#slide-navigation {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+}
